@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Karis School</title>
+    <link rel="stylesheet" href="sch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmj_bREL9sc28FdSBllaJ2bpLjkSUs1PI4eH8r7oc-z0BIQwVJ1FWGKamkJow3L1s&s&ec=73068123" alt="Pure Karis Logo">
+                    <div class="logo-writing">
+                <h1><span class="pure" >Perfect</span> <span class="karis">School</span></h1>
+                <p>The Best There Can Ever Be</p>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#result-portal" class="result-btn">Result Portal</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide" style="background-image: url('p1.jpg'); background-size: cover;">
+            <div class="container hero-content">
+            <h2>Nurturing Future Leaders</h2>
+            <p>Providing quality education with moral values since 2005</p>
+            <a href="#admissions" class="btn">Enroll Now</a>
+        </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('h2.webp'); background-size: cover;">
+                <div class="container hero-content">
+            <h2>We are the <br>Pace-setters</h2>
+            <p>We believe in nurturing each child's unique talents while instilling strong moral values that will guide them throughout their lives.</p>
+            <a href="#admissions" class="btn">Enroll Now</a>
+        </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('h1.webp'); background-size: cover;">
+            <div class="container hero-content">
+            <h2>Why learn with us</h2>
+            <p>We make learning interactive based</p>
+            <a href="#admissions" class="btn">Enroll Now</a>
+        </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('p3.jpg'); background-size: cover;;">
+            <div class="container hero-content">
+            <h2>Assured Security</h2>
+            <p>Your ward is in the safest hands, we give them security tips to prevent potential security threats</p>
+            <a href="#admissions" class="btn">Enroll Now</a>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our School</h2>
+                <p>Excellence in education with a focus on character development</p>
+            </div>
+            <div class="about-content">
+                <p>Pure Karis School is committed to providing a holistic education that develops students academically, socially, and spiritually. Our dedicated staff and modern facilities create an ideal learning environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="academics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Academic Programs</h2>
+                <p>Comprehensive curriculum designed for holistic development</p>
+            </div>
+            <div class="programs">
+                <div class="program">
+                    <i class="fas fa-child"></i>
+                    <h3>Pre-School</h3>
+                   <button id="learn-more">
+                    <!-- <p>Learn More</p> -->
+                   </button>
+                        <p>Early childhood education for ages 3-5 with play-based learning approach</p>
+                   </div>
+                </div>
+               <div class="programs">
+                <div class="program-primary">
+                    <i class="fas fa-book"></i>
+                    <h3>Primary</h3>
+                   <button id="learn-more">
+                    <!-- <p>Learn More</p> -->
+                   </button>
+                        <p>Grades 1-6 with comprehensive curriculum and extracurricular activities</p>
+                   </div>
+                </div>
+                <div class="programs">
+                <div class="program-secondary">
+                    <i class="fas fa-school"></i>
+                    <h3>Secondary</h3>
+                   <button id="learn-more">
+                    <!-- <p>Learn More</p> -->
+                   </button>
+                        <p>Junior High School curriculum preparing students for higher education</p>
+                   </div>
+                </div>               
+    </section>
+
+    <!-- Result Portal Section -->
+    <section id="result-portal" class="result-portal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Student Result Portal</h2>
+                <p>Access academic records and performance reports</p>
+            </div>
+            <div class="portal-container">
+                <div class="admin-login" id="admin-login">
+                    <h3>Admin Login</h3>
+                    <form id="admin-form">
+                        <div class="form-group">
+                            <label for="admin-username">Username:</label>
+                            <input type="text" id="admin-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="admin-password">Password:</label>
+                            <input type="password" id="admin-password" required>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+
+                <div class="student-login" id="student-login">
+                    <h3>Check Results</h3>
+                    <form id="result-form">
+                        <div class="form-group">
+                            <label for="student-code">Student Code:</label>
+                            <input type="text" id="student-code" placeholder="Enter student code" required>
+                        </div>
+                        <button type="submit" class="btn">View Results</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Admin Panel -->
+            <div class="admin-panel" id="admin-panel">
+                <h3>Admin Dashboard</h3>
+                <div class="admin-actions">
+                    <button id="add-result-btn" class="btn">Add New Result</button>
+                    <button id="view-results-btn" class="btn">View All Results</button>
+                    <button id="logout-btn" class="btn logout">Logout</button>
+                </div>
+
+                <!-- Add Result Form -->
+                <div class="add-result-form" id="add-result-form">
+                    <h4>Add Student Result</h4>
+                    <form id="result-entry-form">
+                        <div class="form-group">
+                            <label for="student-name">Student Name:</label>
+                            <input type="text" id="student-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-class">Class:</label>
+                            <input type="text" id="student-class" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-id">Student ID (for login code):</label>
+                            <input type="text" id="student-id" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="term">Term:</label>
+                            <select id="term" required>
+                                <option value="1st">First Term</option>
+                                <option value="2nd">Second Term</option>
+                                <option value="3rd">Third Term</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="session">Session:</label>
+                            <input type="text" id="session" placeholder="e.g., 2023/2024" required>
+                        </div>
+                        
+                        <h4>Subject Scores</h4>
+                        <div id="subject-scores">
+                            <!-- Subjects will be added here dynamically -->
+                        </div>
+                        <button type="button" id="add-subject-btn" class="btn small">Add Subject</button>
+                        
+                        <div class="form-group">
+                            <label for="teacher-remarks">Teacher's Remarks:</label>
+                            <textarea id="teacher-remarks" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="head-remarks">Head's Remarks:</label>
+                            <textarea id="head-remarks" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Save Result</button>
+                    </form>
+                </div>
+
+                <!-- View Results Section -->
+                <div class="view-results" id="view-results">
+                    <h4>All Student Results</h4>
+                    <div class="form-group">
+                        <input type="text" id="search-results" placeholder="Search by name or ID...">
+                    </div>
+                    <div class="results-list" id="results-list">
+                        <!-- Results will be displayed here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Display -->
+            <div class="result-display" id="result-display">
+                <div class="result-header">
+                    <h3>PURE KARIS SCHOOL</h3>
+                    <p>OFFICIAL RESULT SHEET</p>
+                </div>
+                <div class="student-info">
+                    <div>
+                        <span>Name:</span> <span id="display-name"></span>
+                    </div>
+                    <div>
+                        <span>Class:</span> <span id="display-class"></span>
+                    </div>
+                    <div>
+                        <span>Term:</span> <span id="display-term"></span>
+                    </div>
+                    <div>
+                        <span>Session:</span> <span id="display-session"></span>
+                    </div>
+                </div>
+                
+                <table id="result-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Class Work (40%)</th>
+                            <th>Exams (60%)</th>
+                            <th>Total (100%)</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Results will be populated here -->
+                    </tbody>
+                </table>
+                
+                <div class="remarks-section">
+                    <div class="remarks">
+                        <h4>Teacher's Remarks:</h4>
+                        <p id="teacher-remarks-display"></p>
+                    </div>
+                    <div class="remarks">
+                        <h4>Head's Remarks:</h4>
+                        <p id="head-remarks-display"></p>
+                    </div>
+                </div>
+                
+                <div class="result-actions">
+                    <button id="print-result" class="btn">Print Result</button>
+                    <button id="back-to-portal" class="btn">Back to Portal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+<section id="admissions" class="admissions">
+  <div class="container">
+    <div class="section-header">
+      <h2>Admissions</h2>
+      <p>Join our community of learners and leaders</p>
+    </div>
+    <p>We are currently accepting applications for the new academic session. Download our admission form or visit the school for more information.</p>
+    <button id="openFormBtn" class="btn">Fill & download Form</button>
+  </div>
+  <!-- ===== Admission Form Modal (add to index.html, e.g. after Admissions section) ===== -->
+<link rel="stylesheet" href="form.css"> <!-- add this in the <head> if you prefer; put here if you cannot edit head -->
+
+<div id="admissionModal" class="admission-modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+  <div class="admission-modal__backdrop" id="admissionBackdrop"></div>
+
+  <div class="admission-modal__panel" role="document">
+    <button class="admission-modal__close" id="closeModal" aria-label="Close form">×</button>
+
+    <header class="admission-modal__header">
+      <h2 id="modalTitle">Application for Admission — Perfect School</h2>
+      <p class="muted">Complete the form then click <strong>Download PDF</strong>.</p>
+    </header>
+
+    <main class="admission-modal__body">
+      <form id="admissionForm" class="admission-form" autocomplete="off" novalidate>
+        <!-- SECTION A: Student details -->
+        <fieldset class="section">
+          <legend>Student Details</legend>
+
+          <label>Other Names
+            <input id="otherNames" name="otherNames" type="text" />
+          </label>
+
+          <label>Address
+            <input id="address" name="address" type="text" />
+          </label>
+
+          <label>Date of Birth
+            <input id="dob" name="dob" type="date" />
+          </label>
+
+          <label>Region of Origin
+            <input id="stateOrigin" name="stateOrigin" type="text" />
+          </label>
+
+          <label>Religion
+            <input id="religion" name="religion" type="text" />
+          </label>
+
+          <label>Present School (if any)
+            <input id="presentSchool" name="presentSchool" type="text" />
+          </label>
+
+          <label>Class (entry class)
+            <select id="entryClass" name="entryClass">
+              <option value="">-- Select class --</option>
+              <option>Creche (0–1)</option>
+              <option>Start Right (1+–2)</option>
+              <option>Toddler (2+–3)</option>
+              <option>Nursery 1 (3+–4)</option>
+              <option>Nursery 2 (4+–5)</option>
+              <option>First Grade</option>
+              <option>Second Grade</option>
+              <option>Third Grade</option>
+              <option>Fourth Grade</option>
+              <option>Fifth Grade</option>
+              <option>Sixth Grade</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <!-- SECTION B: Parent / Guardian -->
+        <fieldset class="section">
+          <legend>Parent / Guardian</legend>
+
+          <label>Full Name
+            <input id="parentName" name="parentName" type="text" />
+          </label>
+
+          <label>Occupation
+            <input id="parentOccupation" name="parentOccupation" type="text" />
+          </label>
+
+          <label>Address
+            <input id="parentAddress" name="parentAddress" type="text" />
+          </label>
+
+          <label>Telephone
+            <input id="parentTelephone" name="parentTelephone" type="tel" />
+          </label>
+
+          <label>Email
+            <input id="parentEmail" name="parentEmail" type="email" />
+          </label>
+        </fieldset>
+
+        <!-- SECTION C: Services -->
+        <fieldset class="section">
+          <legend>Choices</legend>
+          <div class="checkbox-row">
+            <label><input type="checkbox" id="mealOption" name="mealOption"> Food Meal Option</label>
+            <label><input type="checkbox" id="busOption" name="busOption"> School Bus</label>
+            <label><input type="checkbox" id="extraLessons" name="extraLessons"> Extra Lessons</label>
+          </div>
+
+          <label>Passport photo (optional)
+            <input id="passportPhoto" name="passportPhoto" type="file" accept="image/*" />
+          </label>
+
+          <label>Extracurricular Activities (choose any)
+            <div class="checkbox-grid">
+              <label><input type="checkbox" name="activities" value="Swimming"> Swimming</label>
+              <label><input type="checkbox" name="activities" value="Dance/Ballet"> Dance/Ballet</label>
+              <label><input type="checkbox" name="activities" value="Karate"> Karate</label>
+              <label><input type="checkbox" name="activities" value="Chess"> Chess</label>
+              <label><input type="checkbox" name="activities" value="Art"> Art</label>
+              <label><input type="checkbox" name="activities" value="Scouts"> Scouts</label>
+              <label><input type="checkbox" name="activities" value="Music"> Music</label>
+              <label><input type="checkbox" name="activities" value="Football"> Football</label>
+            </div>
+          </label>
+        </fieldset>
+
+        <!-- SECTION D: Medical -->
+        <fieldset class="section">
+          <legend>Medical Information</legend>
+
+          <label>Do you want to fill medical info now?
+            <select id="fillMedicalNow" name="fillMedicalNow">
+              <option value="">-- Select --</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </label>
+
+          <label>Emergency Number
+            <input id="emergencyNumber" name="emergencyNumber" type="tel" />
+          </label>
+
+          <label>Doctor's Name
+            <input id="doctorName" name="doctorName" type="text" />
+          </label>
+
+          <label>Clinic / Hospital
+            <input id="clinicName" name="clinicName" type="text" />
+          </label>
+
+          <label>Clinic Address
+            <input id="clinicAddress" name="clinicAddress" type="text" />
+          </label>
+
+          <label>Clinic Phone
+            <input id="clinicPhone" name="clinicPhone" type="tel" />
+          </label>
+
+          <div class="vaccines-grid">
+            <label>BCG <input id="v_bcg" name="v_bcg" type="date" /></label>
+            <label>Hepatitis B <input id="v_hepB" name="v_hepB" type="date" /></label>
+            <label>Measles <input id="v_measles" name="v_measles" type="date" /></label>
+            <label>Oral Polio <input id="v_opv" name="v_opv" type="date" /></label>
+            <label>DPT1 <input id="v_dpt1" name="v_dpt1" type="date" /></label>
+            <label>DPT2 <input id="v_dpt2" name="v_dpt2" type="date" /></label>
+            <label>DPT3 <input id="v_dpt3" name="v_dpt3" type="date" /></label>
+          </div>
+
+          <label>Has the child received a tetanus injection?
+            <select id="tetanus" name="tetanus">
+              <option value="">-- Select --</option>
+              <option>Yes</option><option>No</option>
+            </select>
+          </label>
+
+          <label>If yes, when?
+            <input id="tetanusDate" name="tetanusDate" type="date" />
+          </label>
+
+          <label>Does the child have allergies?
+            <select id="hasAllergies" name="hasAllergies">
+              <option value="">-- Select --</option>
+              <option>Yes</option><option>No</option>
+            </select>
+          </label>
+
+          <label>Allergy details
+            <input id="allergyDetails" name="allergyDetails" type="text" />
+          </label>
+
+          <label>Known medical conditions / illnesses
+            <input id="medicalConditions" name="medicalConditions" type="text" />
+          </label>
+
+          <label>History of: (choose any)
+            <div class="checkbox-grid">
+              <label><input type="checkbox" name="history" value="Measles"> Measles</label>
+              <label><input type="checkbox" name="history" value="Chickenpox"> Chickenpox</label>
+              <label><input type="checkbox" name="history" value="Severe Jaundice"> Severe Jaundice</label>
+              <label><input type="checkbox" name="history" value="Pneumonia"> Pneumonia</label>
+              <label><input type="checkbox" name="history" value="Typhoid"> Typhoid</label>
+              <label><input type="checkbox" name="history" value="Asthma"> Asthma</label>
+              <label><input type="checkbox" name="history" value="Febrile Convulsion"> Febrile Convulsion</label>
+              <label><input type="checkbox" name="history" value="Other"> Other</label>
+            </div>
+          </label>
+
+          <label>Authorise school referral clinic treatment?
+            <select id="authoriseClinic" name="authoriseClinic">
+              <option value="">-- Select --</option>
+              <option>Yes</option><option>No</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <!-- SECTION E: Misc -->
+        <fieldset class="section">
+          <legend>Other</legend>
+
+          <label>How did you learn about Perfect School?
+            <input id="referralSource" name="referralSource" type="text" />
+          </label>
+
+          <label>Form filled by (full name)
+            <input id="filledBy" name="filledBy" type="text" />
+          </label>
+
+          <label>Date
+            <input id="filledDate" name="filledDate" type="date" value="" />
+          </label>
+        </fieldset>
+
+        <div class="admission-modal__actions">
+          <button type="button" id="downloadPdfBtn" class="btn primary">Download PDF</button>
+          <button type="button" id="closeModalBottom" class="btn">Close</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</div>
+<!-- ===== end modal ===== -->
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for more information</p>
+            </div>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Aunty Mary<br> Dome-Pillar 2</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <p>054 664 3185 <br>050 511 2031</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>info@purekaris.edu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#academics">Academics</a></li>
+                        <li><a href="#result-portal">Result Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>School Hours</h3>
+                    <p>Monday - Friday: 8:00am - 3:00pm</p>
+                    <p>Saturday: 9:00am - 1:00pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Perfect School. || HuBB Tec. || All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
